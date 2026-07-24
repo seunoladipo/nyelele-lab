@@ -33,7 +33,6 @@
 }
 </style>
 </head>
-</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
@@ -78,23 +77,54 @@
 <!-- ================================================================
      HOW TO ADD A PAPER
      Copy one <article class="pub"> block, paste it at the top, and
-     change five things:
-       1. the topic tags in .pub__meta   (classes: t-water t-air t-heat
-                                          t-carbon t-equity t-biodiv)
-       2. the title and its DOI link
-       3. the authors  (wrap lab members in <span class="lab">)
-       4. the one-sentence summary
-       5. the DOI in BOTH badge tags at the bottom
+     change: the venue and year, the title and DOI link, the authors
+     (wrap lab members in <span class="lab">), the summary, the image,
+     and the DOI in BOTH badge tags.
      Add class "pub--featured" for a green border on a highlighted paper.
-     Use "pub pub--nofigure" and delete the <figure> if there is no image.
      ================================================================ -->
+
+      <div class="yearmark">2025</div>
+
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">Science of The Total Environment</span>
+            <span>2025</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1016/j.scitotenv.2025.180487">Valuing co-benefits of forest
+            fuels treatment for reducing wildfire risk in California's Sierra
+            Nevada<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            Han Guo, Michael Goulden, Min Gon Chung, Qingqing Xu, <span class="lab">Charity Nyelele</span>,
+            Weichao Guo, Benis Egoh, Martha Conklin, Catherine Keske, Mohammad Safeeq, Roger Bales
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1016/j.scitotenv.2025.180487"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.scitotenv.2025.180487"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
+      </article>
+
+      <div class="yearmark">2024</div>
 
       <article class="pub pub--featured" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Ecohydrology</span>
             <span>2024</span>
-      
           </div>
 
           <h2 class="pub__title">
@@ -106,11 +136,12 @@
             Min Gon Chung, Han Guo, <span class="lab">Charity Nyelele</span>, Benis N. Egoh,
             Michael L. Goulden, Catherine M. Keske, Roger C. Bales
           </p>
-          
-          <p class="pub__summary">This study found that active forest management such as commercial thinning and low severity burnsreduces 
-            tree density and water consumption, boosting mountain water runoff for up to 15 years. Putting a concrete dollar value on these 
-            water gains gives land managers a practical financial roadmap to fund proactive treatments, helping protect overgrown forests from
-            catastrophic wildfires and drought.</p>
+
+          <p class="pub__summary">This study found that active forest management such as commercial
+          thinning and low severity burns reduces tree density and water consumption, boosting
+          mountain water runoff for up to 15 years. Putting a concrete dollar value on these water
+          gains gives land managers a practical financial roadmap to fund proactive treatments,
+          helping protect overgrown forests from catastrophic wildfires and drought.</p>
 
           <div class="pub__badges">
             <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
@@ -120,22 +151,19 @@
           </div>
         </div>
 
-        <figure class="pub__figure">
+        <figure class="pub__figure" style="margin:0">
           <img src="assets/assets/chungg.jpg" alt="Mountain headwaters"
                style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px">
         </figure>
-        
       </article>
 
       <div class="yearmark">2023</div>
 
-      <article class="pub">
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Ecological Indicators</span>
             <span>2023</span>
-            <span class="t-biodiv">Cultural services</span>
-            <span class="t-equity">Machine learning</span>
           </div>
 
           <h2 class="pub__title">
@@ -144,7 +172,8 @@
           </h2>
 
           <p class="pub__authors">
-            <span class="lab">Nyelele, C.</span>, Keske, C., Chung, M.G., Guo, H., Egoh, B.N.
+            <span class="lab">Charity Nyelele</span>, Catherine Keske, Min Gon Chung, Han Guo,
+            Benis N. Egoh
           </p>
 
           <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
@@ -157,20 +186,114 @@
           </div>
         </div>
 
-        <figure class="pub__figure">
-          <div class="placeholder">ADD IMAGE<br>assets/pub-ecolind2023.jpg</div>
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
         </figure>
+      </article>
+
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">Science of The Total Environment</span>
+            <span>2023</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1016/j.scitotenv.2023.162836">Valuing the benefits of forest
+            restoration on enhancing hydropower and water supply in California's Sierra
+            Nevada<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            Han Guo, Michael Goulden, Min Gon Chung, <span class="lab">Charity Nyelele</span>,
+            Benis Egoh, Catherine Keske, Martha Conklin, Roger Bales
+          </p>
+
+          <p class="pub__summary">Strategically planned fuels-reduction treatments can deliver
+          water-related benefits of over $3,000 per hectare &mdash; enough that water-supply and
+          hydropower gains can offset the cost of forest restoration outright. Drier years yield
+          greater revenue per area treated, strengthening the case for partnerships between forest
+          managers and water and hydropower providers.</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1016/j.scitotenv.2023.162836"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.scitotenv.2023.162836"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
+      </article>
+
+      <!-- The citation you gave for this one is incomplete (no journal, truncated
+           title, no DOI). Fill in the venue and DOI, or delete the block. Badges
+           are omitted because they cannot resolve without a DOI. -->
+      <article class="pub pub--nofigure" style="display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:start">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">[JOURNAL NAME]</span>
+            <span>2023</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="#">Using social media data to estimate recreational travel costs: a case study
+            from [COMPLETE THE TITLE]<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Charity Nyelele</span>, Catherine Keske, Min Gon Chung
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+        </div>
       </article>
 
       <div class="yearmark">2022</div>
 
-      <article class="pub">
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">Ecosystem Services</span>
+            <span>2022</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1016/j.ecoser.2022.101478">A review of machine learning and
+            big data applications in addressing ecosystem service research
+            gaps<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            Kyle Manley, <span class="lab">Charity Nyelele</span>, Benis N. Egoh
+          </p>
+
+          <p class="pub__summary">Ecosystem service research is limited by three persistent problems:
+          patchy data, poorly quantified uncertainty, and weak links between social and ecological
+          systems. This review argues that big data can fill data gaps directly while machine
+          learning handles the nonlinear socio-ecological relationships that simpler proxies flatten
+          &mdash; and identifies where implementation still lags the opportunity.</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1016/j.ecoser.2022.101478"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecoser.2022.101478"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
+      </article>
+
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Urban Forestry &amp; Urban Greening</span>
             <span>2022</span>
-            <span class="t-carbon">Prioritization</span>
-            <span class="t-equity">Equity</span>
           </div>
 
           <h2 class="pub__title">
@@ -180,7 +303,7 @@
           </h2>
 
           <p class="pub__authors">
-            <span class="lab">Nyelele, C.</span>, Kroll, C.N., Nowak, D.J.
+            <span class="lab">Charity Nyelele</span>, Charles N. Kroll, David J. Nowak
           </p>
 
           <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
@@ -193,107 +316,153 @@
           </div>
         </div>
 
-        <figure class="pub__figure">
-          <div class="placeholder">ADD IMAGE<br>assets/pub-ufug2022.jpg</div>
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
         </figure>
       </article>
 
       <div class="yearmark">2021</div>
 
-      <article class="pub pub--nofigure">
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Landscape and Urban Planning</span>
             <span>2021</span>
-            <span class="t-carbon">Prioritization</span>
-            <span class="t-equity">Equity</span>
           </div>
 
           <h2 class="pub__title">
-            <a href="https://doi.org/DOI-GOES-HERE">A multi-objective decision support framework to
-            prioritize tree planting locations in urban areas<span class="ext">&#8599;</span></a>
+            <a href="https://doi.org/10.1016/j.landurbplan.2021.104172">A multi-objective decision
+            support framework to prioritize tree planting locations in urban
+            areas<span class="ext">&#8599;</span></a>
           </h2>
 
           <p class="pub__authors">
-            <span class="lab">Nyelele, C.</span>, Kroll, C.N.
+            <span class="lab">Charity Nyelele</span>, Charles N. Kroll
           </p>
 
           <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
 
           <div class="pub__badges">
             <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
-                 data-doi="DOI-GOES-HERE"></div>
-            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                 data-doi="10.1016/j.landurbplan.2021.104172"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.landurbplan.2021.104172"
                   data-style="small_circle"></span>
           </div>
         </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
+      </article>
+
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">PLOS ONE</span>
+            <span>2021</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1371/journal.pone.0254249">Rewilding and restoring nature in
+            a changing world<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            Benis N. Egoh, <span class="lab">Charity Nyelele</span>, Karen D. Holl, James M. Bullock,
+            Steve Carver, Christopher J. Sandom
+          </p>
+
+          <p class="pub__summary">An introduction to a PLOS ONE collection on rewilding and
+          restoration, setting out four threads that run through the field: the growing recognition
+          of restoration under rapid environmental change, how benefits and beneficiaries shape
+          financing, the role of the largest plants and animals in driving biosphere-scale
+          processes, and what rewilding has achieved in the developing world.</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1371/journal.pone.0254249"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0254249"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
       </article>
 
       <div class="yearmark">2020</div>
 
-      <article class="pub pub--nofigure">
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Urban Forestry &amp; Urban Greening</span>
             <span>2020</span>
-            <span class="t-equity">Environmental justice</span>
-            <span class="t-heat">Heat</span>
           </div>
 
           <h2 class="pub__title">
-            <a href="https://doi.org/DOI-GOES-HERE">The equity of urban forest ecosystem services and
-            benefits in the Bronx, NY<span class="ext">&#8599;</span></a>
+            <a href="https://doi.org/10.1016/j.ufug.2020.126723">The equity of urban forest ecosystem
+            services and benefits in the Bronx, NY<span class="ext">&#8599;</span></a>
           </h2>
 
           <p class="pub__authors">
-            <span class="lab">Nyelele, C.</span>, Kroll, C.N.
+            <span class="lab">Charity Nyelele</span>, Charles N. Kroll
           </p>
 
-          <p class="pub__summary">[This study found that urban tree cover and its associated ecosystem 
-            services such as heat index reduction and air pollutant removal are unequally distributed in
-            the Bronx, with socioeconomically disadvantaged neighborhoods receiving significantly lower benefits. 
-            These findings matter because they highlight critical environmental inequities, demonstrating that
-            municipal tree-planting and greening programs must strategically target marginalized, low-canopy areas
-            to achieve environmental justice and improve public health.]</p>
+          <p class="pub__summary">This paper asks whether the benefits of urban trees &mdash; carbon
+          storage and sequestration, PM2.5 removal, heat index reduction, and stormwater runoff
+          control &mdash; are distributed unevenly across the Bronx with respect to income, race,
+          population density, poverty, and educational attainment.</p>
 
           <div class="pub__badges">
             <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
-                 data-doi="DOI-GOES-HERE"></div>
-            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                 data-doi="10.1016/j.ufug.2020.126723"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ufug.2020.126723"
                   data-style="small_circle"></span>
           </div>
         </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
       </article>
 
       <div class="yearmark">2019</div>
 
-      <article class="pub pub--nofigure">
+      <article class="pub" style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start">
         <div>
           <div class="pub__meta">
             <span class="venue">Urban Forestry &amp; Urban Greening</span>
             <span>2019</span>
-            <span class="t-air">Air quality</span>
-            <span class="t-carbon">Carbon</span>
           </div>
 
           <h2 class="pub__title">
-            <a href="https://doi.org/DOI-GOES-HERE">Present and future ecosystem services of trees in
-            the Bronx, NY<span class="ext">&#8599;</span></a>
+            <a href="https://doi.org/10.1016/j.ufug.2019.04.018">Present and future ecosystem
+            services of trees in the Bronx, NY<span class="ext">&#8599;</span></a>
           </h2>
 
           <p class="pub__authors">
-            <span class="lab">Nyelele, C.</span>, Kroll, C.N., Nowak, D.J.
+            <span class="lab">Charity Nyelele</span>, Charles N. Kroll, David J. Nowak
           </p>
 
-          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+          <p class="pub__summary">Using a spatially distributed implementation of the i-Tree model
+          suite, this study estimates the ecosystem services delivered by a recent tree planting
+          initiative in each census block group of the Bronx, comparing 2010 against three 2030
+          canopy scenarios that differ in assumed tree mortality. Trees in the Bronx were valued at
+          $37.6 million in 2010, rising to $40.7&ndash;43.9 million by 2030 if existing canopy is
+          maintained and new plantings reach maturity.</p>
 
           <div class="pub__badges">
             <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
-                 data-doi="DOI-GOES-HERE"></div>
-            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                 data-doi="10.1016/j.ufug.2019.04.018"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ufug.2019.04.018"
                   data-style="small_circle"></span>
           </div>
         </div>
+
+        <figure class="pub__figure" style="margin:0">
+          <div style="aspect-ratio:4/3;border:1px dashed rgba(128,128,128,.45);border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:#8E9689;text-align:center;padding:12px">ADD IMAGE</div>
+        </figure>
       </article>
 
     </div>
@@ -362,41 +531,5 @@
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-
-<style>
-/* separator between publications */
-.pub{
-  padding-bottom:40px;
-  border-bottom:1px solid var(--rule);
-  margin-bottom:8px;
-}
-.pub:last-of-type{border-bottom:0}
-
-/* year markers */
-.yearmark{
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--fg-faint);display:flex;align-items:center;gap:14px;margin:34px 0 14px;
-}
-.yearmark::after{content:"";flex:1;height:1px;background:var(--rule)}
-
-/* lab members in green */
-.pub__authors{font-size:.95rem;line-height:1.5;color:var(--fg-muted);margin:0 0 14px}
-.pub__authors .lab{color:var(--accent);font-weight:500}
-
-/* metadata strip with dot separators */
-.pub__meta{
-  font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--fg-faint);display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px;
-  margin-bottom:14px;
-}
-.pub__meta > *::after{content:"\00a0\00b7";margin-left:5px}
-.pub__meta > *:last-child::after{content:""}
-.pub__meta .venue{color:var(--fg-muted)}
-
-/* summary in serif */
-.pub__summary{font-family:var(--serif);font-size:1rem;line-height:1.55;margin:0 0 18px;max-width:62ch}
-.pub__title{margin:0 0 12px}
-</style>
-</body>  
 </body>
 </html>
