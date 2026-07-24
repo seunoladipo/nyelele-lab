@@ -333,3 +333,120 @@ a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
   .masthead,.btn-row,.switch{display:none}
   body{background:#fff;color:#000}
 }
+
+
+
+
+/* ============================================================
+   PUBLICATION ENTRIES  —  append this to the end of style.css
+   ============================================================ */
+
+.pubset{display:flex;flex-direction:column;gap:clamp(20px,2.6vw,30px)}
+
+.pub{
+  background:var(--bg-raised);
+  border:1px solid var(--rule);
+  border-radius:var(--radius);
+  padding:clamp(22px,2.8vw,34px);
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,340px);
+  gap:clamp(22px,3vw,40px);
+  align-items:start;
+}
+.pub--nofigure{grid-template-columns:minmax(0,1fr)}
+.pub--featured{border-color:var(--accent)}
+
+/* ---- metadata strip ---- */
+.pub__meta{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--fg-faint);display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px;
+  line-height:1.7;margin-bottom:16px;
+}
+.pub__meta > *::after{content:"\00a0\00b7";color:var(--fg-faint);margin-left:5px}
+.pub__meta > *:last-child::after{content:""}
+.pub__meta .is-featured{color:var(--accent-3)}
+.pub__meta .venue{color:var(--fg-muted)}
+
+/* topic tags — colour-coded by theme */
+.t-water{color:#3E7FA6}
+.t-air{color:#7A8F3C}
+.t-heat{color:#B06A34}
+.t-carbon{color:#4F7F5C}
+.t-equity{color:#8B5E8E}
+.t-biodiv{color:#3F8C7C}
+:root[data-theme="dark"] .t-water{color:#7FB9DC}
+:root[data-theme="dark"] .t-air{color:#B4C97A}
+:root[data-theme="dark"] .t-heat{color:#E0A276}
+:root[data-theme="dark"] .t-carbon{color:#8FC49E}
+:root[data-theme="dark"] .t-equity{color:#C69BC8}
+:root[data-theme="dark"] .t-biodiv{color:#7FC4B6}
+
+/* ---- title ---- */
+.pub__title{
+  font-family:var(--serif);font-size:clamp(1.32rem,2.1vw,1.72rem);
+  line-height:1.22;margin:0 0 14px;font-weight:400;
+}
+.pub__title a{
+  text-decoration:none;
+  background-image:linear-gradient(var(--rule-strong),var(--rule-strong));
+  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
+  padding-bottom:2px;transition:color .15s,background-image .15s;
+}
+.pub__title a:hover{color:var(--accent)}
+.pub__title .ext{font-size:.72em;vertical-align:.12em;margin-left:.22em;color:var(--fg-faint)}
+
+/* ---- authors ---- */
+.pub__authors{font-size:.95rem;line-height:1.5;color:var(--fg-muted);margin:0 0 14px}
+.pub__authors .lab{color:var(--accent);font-weight:500}
+.pub__authors .lab a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.pub__authors .lab a:hover{border-bottom-color:currentColor}
+
+/* ---- summary ---- */
+.pub__summary{
+  font-family:var(--serif);font-size:1.02rem;line-height:1.55;
+  color:var(--fg);margin:0 0 16px;max-width:62ch;
+}
+
+/* ---- companion link ---- */
+.pub__companion{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--fg-faint);margin:0 0 18px;
+}
+.pub__companion a{color:var(--accent-2);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.pub__companion a:hover{color:var(--accent)}
+
+/* ---- badges (Altmetric + Dimensions) ---- */
+.pub__badges{display:flex;align-items:center;gap:14px;flex-wrap:wrap;min-height:64px}
+.pub__badges .altmetric-embed,
+.pub__badges .__dimensions_badge_embed__{display:inline-block}
+/* keeps the donut legible on the dark theme */
+:root[data-theme="dark"] .pub__badges{filter:none}
+
+/* ---- figure ---- */
+.pub__figure{margin:0}
+.pub__figure img{
+  width:100%;height:auto;border-radius:2px;
+  border:1px solid var(--rule);display:block;
+}
+.pub__figure figcaption{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.07em;
+  color:var(--fg-faint);margin-top:8px;line-height:1.5;
+}
+.pub__figure .placeholder{
+  aspect-ratio:4/3;border:1px dashed var(--rule-strong);border-radius:2px;
+  background:var(--bg-sunken);display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;color:var(--fg-faint);
+  text-align:center;padding:12px;
+}
+
+/* ---- year separator ---- */
+.yearmark{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--fg-faint);display:flex;align-items:center;gap:14px;margin:14px 0 2px;
+}
+.yearmark::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+@media (max-width:860px){
+  .pub{grid-template-columns:1fr}
+  .pub__figure{order:-1}
+}
