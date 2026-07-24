@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Publications — Nyelele Lab</title>
-<meta name="description" content="Papers, datasets, and code from the Nyelele Lab.">
+<meta name="description" content="Papers, datasets, and code from the Nyelele Lab at the University of Virginia.">
 <meta name="theme-color" content="#F7F7EC">
 <meta property="og:title" content="Publications — Nyelele Lab">
-<meta property="og:description" content="Papers, datasets, and code from the Nyelele Lab.">
+<meta property="og:description" content="Papers, datasets, and code from the Nyelele Lab at the University of Virginia.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,55 +41,241 @@
 </header>
 
 <main id="main">
+
 <section class="hero">
   <div class="shell">
     <span class="label">Publications</span>
     <h1>Published work.</h1>
-    <p class="lede">Lab members in bold. Email us if a paper is behind a paywall &mdash; we will send
-    a copy.</p>
+    <p class="lede">Lab members in green. Metrics update automatically. Email us if a paper is behind
+    a paywall &mdash; we will send a copy.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="shell">
-    <ul class="biblio">
-      <li>
-        <span class="yr">2026</span>
+    <div class="pubset">
+
+<!-- ================================================================
+     HOW TO ADD A PAPER
+     Copy one <article class="pub"> block, paste it at the top, and
+     change five things:
+       1. the topic tags in .pub__meta   (classes: t-water t-air t-heat
+                                          t-carbon t-equity t-biodiv)
+       2. the title and its DOI link
+       3. the authors  (wrap lab members in <span class="lab">)
+       4. the one-sentence summary
+       5. the DOI in BOTH badge tags at the bottom
+     Add class "pub--featured" for a green border on a highlighted paper.
+     Use "pub pub--nofigure" and delete the <figure> if there is no image.
+     ================================================================ -->
+
+      <div class="yearmark">2024</div>
+
+      <article class="pub pub--featured">
         <div>
-          <span class="title"><a href="#">Title of the paper goes here</a></span>
-          <div class="authors">Author, A., <strong>Nyelele, C.</strong></div>
-          <div class="venue">Journal Name, 12(3), 45&ndash;67.</div>
-          <div class="tagrow"><span class="tag">Stormwater</span><span class="tag">Trade-offs</span></div>
+          <div class="pub__meta">
+            <span class="is-featured">Featured</span>
+            <span class="venue">Ecohydrology</span>
+            <span>2024</span>
+            <span class="t-water">Water</span>
+            <span class="t-carbon">Carbon</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1002/eco.2642">Valuation of forest-management and wildfire
+            disturbance on water and carbon fluxes in mountain headwaters<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            Chung, M.G., Guo, H., <span class="lab">Nyelele, C.</span>, Egoh, B.N., Goulden, M.L.,
+            Keske, C.M., et al.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.
+          Write this in plain language &mdash; it is the part visitors actually read.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1002/eco.2642"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1002/eco.2642"
+                  data-style="small_circle"></span>
+          </div>
         </div>
-      </li>
-      <li>
-        <span class="yr">2025</span>
+
+        <figure class="pub__figure">
+          <div class="placeholder">ADD IMAGE<br>assets/pub-eco2642.jpg</div>
+          <!-- Replace the div above with:
+          <img src="assets/pub-eco2642.jpg" alt="Short description of the image">
+          <figcaption>Credit line, if the image is not yours</figcaption>
+          -->
+        </figure>
+      </article>
+
+      <div class="yearmark">2023</div>
+
+      <article class="pub">
         <div>
-          <span class="title"><a href="#">Title of the paper goes here</a></span>
-          <div class="authors"><strong>Nyelele, C.</strong>, Author, B.</div>
-          <div class="venue">Journal Name, 11(2), 88&ndash;104.</div>
-          <div class="tagrow"><span class="tag">Air quality</span><span class="tag">Health</span></div>
+          <div class="pub__meta">
+            <span class="venue">Ecological Indicators</span>
+            <span>2023</span>
+            <span class="t-biodiv">Cultural services</span>
+            <span class="t-equity">Machine learning</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1016/j.ecolind.2023.110606">Using social media data and
+            machine learning to map recreational ecosystem services<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Nyelele, C.</span>, Keske, C., Chung, M.G., Guo, H., Egoh, B.N.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1016/j.ecolind.2023.110606"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ecolind.2023.110606"
+                  data-style="small_circle"></span>
+          </div>
         </div>
-      </li>
-      <li>
-        <span class="yr">2025</span>
+
+        <figure class="pub__figure">
+          <div class="placeholder">ADD IMAGE<br>assets/pub-ecolind2023.jpg</div>
+        </figure>
+      </article>
+
+      <div class="yearmark">2022</div>
+
+      <article class="pub">
         <div>
-          <span class="title"><a href="#">Title of the paper goes here</a></span>
-          <div class="authors">Author, C., <strong>Nyelele, C.</strong></div>
-          <div class="venue">Journal Name, 40(1), 1&ndash;19.</div>
-          <div class="tagrow"><span class="tag">Carbon</span><span class="tag">Restoration</span></div>
+          <div class="pub__meta">
+            <span class="venue">Urban Forestry &amp; Urban Greening</span>
+            <span>2022</span>
+            <span class="t-carbon">Prioritization</span>
+            <span class="t-equity">Equity</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/10.1016/j.ufug.2022.127703">A comparison of tree planting
+            prioritization frameworks: i-Tree Landscape versus spatial decision support
+            tool<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Nyelele, C.</span>, Kroll, C.N., Nowak, D.J.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="10.1016/j.ufug.2022.127703"></div>
+            <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ufug.2022.127703"
+                  data-style="small_circle"></span>
+          </div>
         </div>
-      </li>
-      <li>
-        <span class="yr">2024</span>
+
+        <figure class="pub__figure">
+          <div class="placeholder">ADD IMAGE<br>assets/pub-ufug2022.jpg</div>
+        </figure>
+      </article>
+
+      <div class="yearmark">2021</div>
+
+      <article class="pub pub--nofigure">
         <div>
-          <span class="title"><a href="#">Title of the paper goes here</a></span>
-          <div class="authors"><strong>Nyelele, C.</strong></div>
-          <div class="venue">Journal Name, 8(4), 220&ndash;238.</div>
-          <div class="tagrow"><span class="tag">Heat</span></div>
+          <div class="pub__meta">
+            <span class="venue">Landscape and Urban Planning</span>
+            <span>2021</span>
+            <span class="t-carbon">Prioritization</span>
+            <span class="t-equity">Equity</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/DOI-GOES-HERE">A multi-objective decision support framework to
+            prioritize tree planting locations in urban areas<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Nyelele, C.</span>, Kroll, C.N.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="DOI-GOES-HERE"></div>
+            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                  data-style="small_circle"></span>
+          </div>
         </div>
-      </li>
-    </ul>
+      </article>
+
+      <div class="yearmark">2020</div>
+
+      <article class="pub pub--nofigure">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">Urban Forestry &amp; Urban Greening</span>
+            <span>2020</span>
+            <span class="t-equity">Environmental justice</span>
+            <span class="t-heat">Heat</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/DOI-GOES-HERE">The equity of urban forest ecosystem services and
+            benefits in the Bronx, NY<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Nyelele, C.</span>, Kroll, C.N.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="DOI-GOES-HERE"></div>
+            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+      </article>
+
+      <div class="yearmark">2019</div>
+
+      <article class="pub pub--nofigure">
+        <div>
+          <div class="pub__meta">
+            <span class="venue">Urban Forestry &amp; Urban Greening</span>
+            <span>2019</span>
+            <span class="t-air">Air quality</span>
+            <span class="t-carbon">Carbon</span>
+          </div>
+
+          <h2 class="pub__title">
+            <a href="https://doi.org/DOI-GOES-HERE">Present and future ecosystem services of trees in
+            the Bronx, NY<span class="ext">&#8599;</span></a>
+          </h2>
+
+          <p class="pub__authors">
+            <span class="lab">Nyelele, C.</span>, Kroll, C.N., Nowak, D.J.
+          </p>
+
+          <p class="pub__summary">[One or two sentences on what the paper found and why it matters.]</p>
+
+          <div class="pub__badges">
+            <div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right"
+                 data-doi="DOI-GOES-HERE"></div>
+            <span class="__dimensions_badge_embed__" data-doi="DOI-GOES-HERE"
+                  data-style="small_circle"></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
   </div>
 </section>
 
@@ -106,6 +292,7 @@
     </ul>
   </div>
 </section>
+
 </main>
 
 <footer class="colophon">
@@ -116,18 +303,13 @@
         <p>Charity Nyelele, PhD<br>
         Department of Environmental Sciences<br>
         University of Virginia</p>
-        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a><br>
+        <a href="https://scholar.google.com/citations?user=_WX_39kAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a></p>
       </div>
       <div>
         <h4>University of Virginia</h4>
         <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
         <a href="https://www.virginia.edu/">University of Virginia</a></p>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <p><a href="#">Google Scholar</a><br>
-        <a href="#">GitHub</a><br>
-        <a href="#">Bluesky</a></p>
       </div>
     </div>
     <div class="colophon__base">
@@ -139,8 +321,6 @@
 
 <script>
 (function () {
-  /* Theme: follows the operating system, and the button flips it for this visit.
-     No storage is used, so the choice resets on reload. */
   var root = document.documentElement;
   var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
@@ -156,6 +336,10 @@
   });
 })();
 </script>
+
+<!-- Metric badges. Both scripts load once, at the end of the page. -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 </body>
 </html>
