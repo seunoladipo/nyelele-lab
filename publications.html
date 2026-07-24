@@ -5,87 +5,157 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Publications — Nyelele Lab</title>
 <meta name="description" content="Papers, datasets, and code from the Nyelele Lab.">
+<meta name="theme-color" content="#F7F7EC">
+<meta property="og:title" content="Publications — Nyelele Lab">
+<meta property="og:description" content="Papers, datasets, and code from the Nyelele Lab.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <div class="nav-links" id="navlinks">
-      <a class="link" href="index.html">Home</a>
-      <a class="link" href="research.html">Research</a>
-      <a class="link" href="people.html">People</a>
-      <a class="link" href="publications.html" aria-current="page">Publications</a>
-      <a class="link" href="news.html">News</a>
-      <a class="link" href="join.html">Join us</a>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><svg class="wordmark__glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="4.4" fill="currentColor" opacity=".34"/><circle cx="15.5" cy="6.5" r="3" fill="currentColor" opacity=".55"/><circle cx="12.5" cy="15.5" r="5.2" fill="currentColor" opacity=".78"/></svg>Nyelele <em>Lab</em></a>
+    <nav class="mainnav" id="mainnav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="news.html">News</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="iconbtn" id="themebtn" aria-label="Switch between light and dark">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      </button>
+      <button class="iconbtn navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
-  </div>
-</nav>
-
-<header class="page-head">
-  <div class="wrap">
-    <span class="eyebrow">Publications</span>
-    <h1>Published work.</h1>
-    <p class="lede">Lab members in bold. Email us if you cannot reach a paper &mdash; we will send a copy.</p>
   </div>
 </header>
 
-<section class="section first" style="padding-top:50px">
-  <div class="wrap">
-    <p class="muted narrow">Replace the entries below with your own. Link each title to its DOI so
-    the citation resolves even if a journal reorganizes its site.</p>
-    <ul class="pubs">
-      <li><span class="yr">2026</span><span>
-        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
-        <span class="j">Author, A., <strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 12(3), 45&ndash;67.</span>
-      </span></li>
-      <li><span class="yr">2025</span><span>
-        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
-        <span class="j"><strong>Nyelele, C.</strong>, Author, B. &mdash; <em>Journal Name</em>, 11(2), 88&ndash;104.</span>
-      </span></li>
-      <li><span class="yr">2025</span><span>
-        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
-        <span class="j">Author, C., <strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 40(1), 1&ndash;19.</span>
-      </span></li>
-      <li><span class="yr">2024</span><span>
-        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
-        <span class="j"><strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 8(4), 220&ndash;238.</span>
-      </span></li>
+<main id="main">
+<section class="hero">
+  <div class="shell">
+    <span class="label">Publications</span>
+    <h1>Published work.</h1>
+    <p class="lede">Lab members in bold. Email us if a paper is behind a paywall &mdash; we will send
+    a copy.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <ul class="biblio">
+      <li>
+        <span class="yr">2026</span>
+        <div>
+          <span class="title"><a href="#">Title of the paper goes here</a></span>
+          <div class="authors">Author, A., <strong>Nyelele, C.</strong></div>
+          <div class="venue">Journal Name, 12(3), 45&ndash;67.</div>
+          <div class="tagrow"><span class="tag">Stormwater</span><span class="tag">Trade-offs</span></div>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2025</span>
+        <div>
+          <span class="title"><a href="#">Title of the paper goes here</a></span>
+          <div class="authors"><strong>Nyelele, C.</strong>, Author, B.</div>
+          <div class="venue">Journal Name, 11(2), 88&ndash;104.</div>
+          <div class="tagrow"><span class="tag">Air quality</span><span class="tag">Health</span></div>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2025</span>
+        <div>
+          <span class="title"><a href="#">Title of the paper goes here</a></span>
+          <div class="authors">Author, C., <strong>Nyelele, C.</strong></div>
+          <div class="venue">Journal Name, 40(1), 1&ndash;19.</div>
+          <div class="tagrow"><span class="tag">Carbon</span><span class="tag">Restoration</span></div>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2024</span>
+        <div>
+          <span class="title"><a href="#">Title of the paper goes here</a></span>
+          <div class="authors"><strong>Nyelele, C.</strong></div>
+          <div class="venue">Journal Name, 8(4), 220&ndash;238.</div>
+          <div class="tagrow"><span class="tag">Heat</span></div>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Other outputs</span>
-    <h2 style="margin-bottom:30px">Reports, data, and code</h2>
-    <ul class="kv">
-      <li><span class="k">Dataset</span><span class="v">[Name and one line. Link to the repository or archive.]</span></li>
-      <li><span class="k">Code</span><span class="v">[Name and one line. Link to GitHub.]</span></li>
-      <li><span class="k">Report</span><span class="v">[Name and one line. Link to the PDF.]</span></li>
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Other outputs</span>
+      <h2>Data, code, and reports</h2>
+    </div>
+    <ul class="rows">
+      <li><span class="k">Dataset</span><div class="v">[Name and one line. Link to the repository or archive.]</div></li>
+      <li><span class="k">Code</span><div class="v">[Name and one line. Link to GitHub.]</div></li>
+      <li><span class="k">Report</span><div class="v">[Name and one line. Link to the PDF.]</div></li>
     </ul>
   </div>
 </section>
+</main>
 
-<div class="wrap">
-  <footer class="site">
-    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
-    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
-  </footer>
-</div>
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div>
+        <h4>Contact</h4>
+        <p>Charity Nyelele, PhD<br>
+        Department of Environmental Sciences<br>
+        University of Virginia</p>
+        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+      </div>
+      <div>
+        <h4>University of Virginia</h4>
+        <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
+        <a href="https://www.virginia.edu/">University of Virginia</a></p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <p><a href="#">Google Scholar</a><br>
+        <a href="#">GitHub</a><br>
+        <a href="#">Bluesky</a></p>
+      </div>
+    </div>
+    <div class="colophon__base">
+      <span>&copy; 2026 Nyelele Lab</span>
+      <span>Charlottesville, Virginia</span>
+    </div>
+  </div>
+</footer>
 
 <script>
-  // Mobile menu
-  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+(function () {
+  /* Theme: follows the operating system, and the button flips it for this visit.
+     No storage is used, so the choice resets on reload. */
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+
+  document.getElementById('themebtn').addEventListener('click', function () {
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  var t = document.getElementById('navtoggle'), n = document.getElementById('mainnav');
   t.addEventListener('click', function () {
-    var open = l.classList.toggle('open');
+    var open = n.classList.toggle('is-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
 </script>
+
 </body>
 </html>

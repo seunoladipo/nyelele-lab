@@ -1,153 +1,142 @@
-# Nyelele Lab website
+# Nyelele Lab — website (v2)
 
-A complete static website. No build step, no dependencies — the browser reads the
-HTML directly. Open `index.html` on your computer and it works.
+A static site built on a small design system. No build step, no dependencies.
+Open `index.html` in a browser and it works.
 
 ```
-index.html          Home
-research.html       Research themes, methods, projects
+index.html          Home — hero, scope figure, about, featured
+research.html       Themes, services, methods, projects
 people.html         PI, students, alumni
-publications.html   Papers, data, code
+publications.html   Papers with topic tags, plus data and code
 news.html           Lab updates
-join.html           Recruiting + contact
-assets/style.css    All styling for every page
+join.html           Recruiting and how to apply
+assets/style.css    The entire design system
 ```
 
 ---
 
-## 1. Edit the content
+## The design system
 
-Everything in square brackets `[like this]` is a placeholder waiting for you.
+Everything visual comes from tokens at the top of `assets/style.css`. Change a
+token and every page follows. You should rarely need to touch anything else.
 
-**Do these first — they appear on every page:**
+**Colour.** Two sets of tokens — light (`:root`) and dark
+(`:root[data-theme="dark"]`). If you change one, change its partner, or the dark
+mode will drift out of sync.
 
-| What | Where | Find and replace |
-|---|---|---|
-| Email address | `index.html`, `join.html` | `EMAIL@virginia.edu` |
-| Office address | `index.html`, `join.html` | Search for `Clark Hall` |
-| Scholar / social links | `index.html`, `join.html` | Search for `Google Scholar` |
-| Copyright year | every page, bottom | Search for `2026` |
+| Token | Role |
+|---|---|
+| `--bg` | page background |
+| `--bg-raised` | cards and panels |
+| `--bg-sunken` | the figure well |
+| `--fg` / `--fg-muted` / `--fg-faint` | text, in descending emphasis |
+| `--accent` | forest green — primary |
+| `--accent-2` | teal — links and data labels |
+| `--d0` … `--d5` | the six-step colour ramp in the matrix figure |
 
-**Adding a person:** open `people.html`, copy one `<div class="person">…</div>`
-block, paste it below, and change the name, role, and bio.
+**Type.** Three families, each with one job. Spectral (serif) for headings,
+Inter for body text, IBM Plex Mono for small uppercase labels. Swap a family in
+`--serif`, `--sans`, or `--mono` and update the Google Fonts link in each page's
+`<head>`.
 
-**Adding a photo:** put the image in `assets/` (e.g. `assets/charity.jpg`), then
-replace `<div class="photo">ADD PHOTO</div>` with:
+**Rhythm.** `--section-y` controls vertical space between sections;
+`--gap` controls space inside grids; `--shell` sets the maximum page width.
+All three scale with the viewport.
+
+**Reusable pieces.** `.card`, `.rows`, `.biblio`, `.roster`, `.section__head`,
+`.label`, `.btn`. Copy an existing block rather than writing new markup — that
+is what keeps the pages consistent.
+
+---
+
+## The scope figure
+
+The matrix on the home page is the site's signature element. **It currently
+contains placeholder numbers.** Replace them before anyone sees the site.
+
+Open `index.html`, scroll to the bottom, and find the block marked
+`MATRIX FIGURE DATA`. Edit only the arrays:
+
+```js
+var COLS = ["Stormwater","Air quality","Heat","Carbon","Biodiversity","Health"];
+var ROWS = ["Supply modelling","Demand & access","Trade-offs",
+            "Restoration priority","Climate resilience"];
+
+var DATA = {
+  projects:     [[3,2,3,2,1,1], ...],   // one row per ROWS entry
+  publications: [[4,3,2,3,1,1], ...]
+};
+```
+
+Each inner array must have exactly as many numbers as there are columns, and
+there must be exactly as many arrays as there are rows. The colour scale is
+computed from the largest number present, so you never set colours by hand.
+
+If the categories don't fit your work, change `COLS` and `ROWS` to whatever
+does — study systems, regions, methods. The figure adapts.
+
+To remove the figure entirely, delete the `<section>` containing
+`<div id="matrix">` and the `<script>` block at the bottom of `index.html`.
+
+---
+
+## Editing content
+
+Placeholders appear in `[square brackets]`. Do these first:
+
+| What | Where |
+|---|---|
+| `EMAIL@virginia.edu` | footer on every page, plus `join.html` |
+| `href="#"` on Scholar / GitHub links | footer on every page |
+| Matrix numbers | bottom of `index.html` |
+| Everything in `[brackets]` | throughout |
+
+**Add a person:** copy one `<div class="member">…</div>` block in `people.html`.
+
+**Add a photo:** put the file in `assets/`, then replace
+`<div class="member__portrait">ADD PHOTO</div>` with:
 
 ```html
-<div class="photo"><img src="assets/charity.jpg" alt="Charity Nyelele"></div>
+<div class="member__portrait"><img src="assets/name.jpg" alt="Full Name"></div>
 ```
 
-Crop photos to a 4:5 portrait and keep them under about 300 KB.
+Portraits are cropped to circles, so use a square image. Under 300 KB.
 
-**Adding a publication:** open `publications.html`, copy one `<li>…</li>` block,
-paste it at the top, and change the year, title, and journal. Put the DOI link in
-the `href="#"`.
-
-**Changing colours:** open `assets/style.css`. The first block defines every
-colour used on the site. Change a value there and it updates everywhere.
+**Add a publication:** copy one `<li>…</li>` in `publications.html`. Put the DOI
+in the `href`. Tags are optional — delete the `.tagrow` div if you don't want them.
 
 ---
 
-## 2. Preview locally
+## Dark mode
 
-Just double-click `index.html`. That is genuinely enough for a site this simple.
+The site follows the reader's system setting, and the sun/moon button flips it
+for that visit. The choice is not remembered between visits, because saving it
+requires browser storage.
 
-If you want a local server that behaves exactly like the live one:
-
-```bash
-cd path/to/this/folder
-python3 -m http.server 8000
-```
-
-Then open <http://localhost:8000>. Stop it with Ctrl+C.
+To add persistence, replace the theme block in the `<script>` at the bottom of
+each page with a version that reads and writes `localStorage`. Works fine on
+GitHub Pages; it just needs to go into all six files.
 
 ---
 
-## 3. Put it on GitHub
+## Publishing
 
-### Create the organization (recommended)
+Upload every file, plus the `assets` folder, to your GitHub repository, then
+Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
 
-Do this rather than using your personal account, so the site belongs to the lab
-and survives you graduating.
-
-1. GitHub → your avatar (top right) → **Your organizations** → **New organization** → **Free**
-2. Name it `nyelele-lab`
-3. Invite Dr. Nyelele and set her as an **Owner**
-
-### Create the repository
-
-1. Inside the organization: **New repository**
-2. Name it exactly `nyelele-lab.github.io` (the name must match the org name)
-3. **Public** — GitHub Pages needs public repos on the free plan
-4. Create
-
-### Upload the files
-
-The no-terminal way: on the empty repo page, click **uploading an existing file**,
-drag in every file *and* the `assets` folder, then **Commit changes**.
-
-The git way:
-
-```bash
-cd path/to/this/folder
-git init
-git add .
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/nyelele-lab/nyelele-lab.github.io.git
-git push -u origin main
-```
-
-### Turn on Pages
-
-Repository → **Settings** → **Pages** → under *Build and deployment*, set
-Source to **Deploy from a branch**, branch **main**, folder **/ (root)** → Save.
-
-Wait one to two minutes. The site is live at **https://nyelele-lab.github.io**.
+To replace the existing site: delete the old files in the repo first, then
+upload these. Committing over the top leaves orphaned files behind.
 
 ---
 
-## 4. Making changes later
+## When something looks wrong
 
-Edit a file, then:
+**Unstyled black text on white.** The `assets` folder didn't upload.
 
-```bash
-git add .
-git commit -m "Add spring publications"
-git push
-```
+**Changes not appearing.** Hard refresh: `Ctrl+Shift+R`, or `Cmd+Shift+R` on a Mac.
 
-The live site updates within a minute. Or edit any file directly on
-github.com — click the file, then the pencil icon.
+**Figure area is blank.** A JavaScript error, almost always a mismatched array
+length in the matrix data. Open the browser console (F12) to see it.
 
----
-
-## 5. Using a custom domain (optional)
-
-If the lab buys a domain (around $12/year):
-
-1. Create a file named `CNAME` in this folder containing only the domain, e.g. `nyelelelab.org`
-2. At your registrar, add these DNS records:
-   - Four `A` records for the apex domain pointing to `185.199.108.153`,
-     `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - One `CNAME` record for `www` pointing to `nyelele-lab.github.io`
-3. Repository → Settings → Pages → enter the domain → tick **Enforce HTTPS**
-
-DNS takes anywhere from ten minutes to a day to propagate.
-
----
-
-## Things that commonly go wrong
-
-**Site is blank or unstyled.** The `assets` folder did not upload. Check that
-`assets/style.css` exists in the repo.
-
-**404 after enabling Pages.** Give it two minutes, then confirm `index.html` is
-in the repository root, not inside a subfolder.
-
-**Changes not appearing.** Hard refresh: Ctrl+Shift+R, or Cmd+Shift+R on a Mac.
-
-**Fonts look wrong.** The fonts load from Google Fonts, so the first load needs
-an internet connection. Offline, the browser falls back to system fonts and the
-layout still holds.
+**Fonts look generic.** Google Fonts is unreachable — the layout still holds,
+only the typefaces fall back.

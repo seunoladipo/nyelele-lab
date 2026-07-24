@@ -3,134 +3,254 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nyelele Lab — Environmental Sciences, University of Virginia</title>
-<meta name="description" content="The Nyelele Lab studies the nature-people interface: how forests deliver ecosystem services, and how planning and management shape who benefits.">
+<title>Nyelele Lab — University of Virginia</title>
+<meta name="description" content="The Nyelele Lab studies how forested systems deliver ecosystem services and how planning decisions shape who benefits.">
+<meta name="theme-color" content="#F7F7EC">
+<meta property="og:title" content="Nyelele Lab — University of Virginia">
+<meta property="og:description" content="The Nyelele Lab studies how forested systems deliver ecosystem services and how planning decisions shape who benefits.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <div class="nav-links" id="navlinks">
-      <a class="link" href="index.html" aria-current="page">Home</a>
-      <a class="link" href="research.html">Research</a>
-      <a class="link" href="people.html">People</a>
-      <a class="link" href="publications.html">Publications</a>
-      <a class="link" href="news.html">News</a>
-      <a class="link" href="join.html">Join us</a>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><svg class="wordmark__glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="4.4" fill="currentColor" opacity=".34"/><circle cx="15.5" cy="6.5" r="3" fill="currentColor" opacity=".55"/><circle cx="12.5" cy="15.5" r="5.2" fill="currentColor" opacity=".78"/></svg>Nyelele <em>Lab</em></a>
+    <nav class="mainnav" id="mainnav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="iconbtn" id="themebtn" aria-label="Switch between light and dark">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      </button>
+      <button class="iconbtn navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="affil">Department of <a href="https://www.evsc.virginia.edu/">Environmental Sciences</a> &middot; University of Virginia</p>
-      <h1>Forests, people, and the <em>services</em> between them.</h1>
-      <p class="lede">We work at the nature&ndash;people interface, studying how ecosystems deliver
-      benefits to communities and how planning and management decisions change who receives them.
-      Our current focus is forested systems, especially in cities.</p>
-      <div class="cta-row">
-        <a class="btn solid" href="research.html">See our research</a>
-        <a class="btn" href="join.html">Work with us</a>
-      </div>
-    </div>
-    <figure style="margin:0">
-      <svg class="canopy-fig" viewBox="0 0 520 460" role="img"
-           aria-label="Illustration of tree canopy cover overlaid on an urban street grid.">
-        <defs><clipPath id="frame"><rect x="0" y="0" width="520" height="460" rx="2"/></clipPath></defs>
-        <g clip-path="url(#frame)">
-          <rect width="520" height="460" fill="#E4E9E0"/>
-          <g fill="#DBE1D6">
-            <rect x="26" y="26" width="126" height="118"/><rect x="182" y="26" width="156" height="118"/>
-            <rect x="368" y="26" width="126" height="118"/><rect x="26" y="174" width="126" height="112"/>
-            <rect x="182" y="174" width="156" height="112"/><rect x="368" y="174" width="126" height="112"/>
-            <rect x="26" y="316" width="126" height="118"/><rect x="182" y="316" width="156" height="118"/>
-            <rect x="368" y="316" width="126" height="118"/>
-          </g>
-          <g stroke="#C7CFC3" stroke-width="1"><path d="M0 160H520M0 300H520M166 0V460M352 0V460"/></g>
-          <path d="M-10 396 C 110 372, 168 428, 268 396 S 430 350, 530 380" fill="none"
-                stroke="#286676" stroke-opacity=".5" stroke-width="4"/>
-          <g fill="#2E5D3B">
-            <circle class="blob" cx="72"  cy="72"  r="30" opacity=".55" style="animation-delay:.05s"/>
-            <circle class="blob" cx="118" cy="104" r="21" opacity=".42" style="animation-delay:.12s"/>
-            <circle class="blob" cx="238" cy="82"  r="38" opacity=".62" style="animation-delay:.19s"/>
-            <circle class="blob" cx="296" cy="118" r="24" opacity=".45" style="animation-delay:.26s"/>
-            <circle class="blob" cx="424" cy="66"  r="18" opacity=".30" style="animation-delay:.33s"/>
-            <circle class="blob" cx="62"  cy="228" r="26" opacity=".50" style="animation-delay:.40s"/>
-            <circle class="blob" cx="212" cy="234" r="33" opacity=".58" style="animation-delay:.47s"/>
-            <circle class="blob" cx="268" cy="206" r="20" opacity=".38" style="animation-delay:.54s"/>
-            <circle class="blob" cx="418" cy="232" r="34" opacity=".60" style="animation-delay:.61s"/>
-            <circle class="blob" cx="462" cy="196" r="22" opacity=".40" style="animation-delay:.68s"/>
-            <circle class="blob" cx="86"  cy="372" r="40" opacity=".66" style="animation-delay:.75s"/>
-            <circle class="blob" cx="146" cy="404" r="25" opacity=".50" style="animation-delay:.82s"/>
-            <circle class="blob" cx="252" cy="382" r="32" opacity=".56" style="animation-delay:.89s"/>
-            <circle class="blob" cx="392" cy="392" r="36" opacity=".60" style="animation-delay:.96s"/>
-            <circle class="blob" cx="452" cy="358" r="23" opacity=".44" style="animation-delay:1.03s"/>
-          </g>
-        </g>
-        <rect x=".5" y=".5" width="519" height="459" fill="none" stroke="rgba(19,33,27,.16)"/>
-      </svg>
-      <figcaption class="fig-caption">Canopy cover across parcels, streets, and a riparian corridor
-      &mdash; the unit of analysis for most of our work.</figcaption>
-    </figure>
   </div>
 </header>
 
-<section class="section" id="about">
-  <div class="wrap">
-    <span class="eyebrow">About the lab</span>
-    <div class="split">
-      <h2>Bridging the social and ecological sciences.</h2>
-      <div>
-        <p> The research group led by Dr. Charity Nyelele in the Department of Environmental Sciences at the University of Virginia. Our research is centered on bridging the gap between the social and ecological sciences, with the aim to improve our understanding of issues at the nature-people interface, particularly how nature delivers ecosystem services and benefits to humans and how to limit human impacts on the environment. We are interested broadly in the links between biodiversity, climate change and ecosystem services and benefits. Our current research is primarily on forested systems, especially in urban areas, to assess the impacts of alternative planning and management options on the demand and supply of multiple ecosystem services (including stormwater management, air quality improvements, air temperature reductions and carbon storage and sequestration) as well as trade-offs and synergies among these ecosystem services.</p>
-        <p>We are also interested in exploring issues around climate resilience and the identification of priority areas for forest restoration. We use a socio-ecological lens to link the ecosystem services and benefits, including health outcomes to beneficiaries. The goal of our work is to inform the development of locally tailored strategies and forest management efforts that address various climate, environmental, and societal concerns.</p>
+<main id="main">
+<section class="hero">
+  <div class="shell">
+    <span class="label">University of Virginia &middot; Department of Environmental Sciences</span>
+    <h1><span class="br">Shared landscapes.</span> Uneven benefits.</h1>
+    <p class="lede">The Nyelele Lab works at the nature&ndash;people interface, studying how forested
+    systems deliver ecosystem services and how planning decisions determine who actually receives
+    them.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="research.html">Research</a>
+      <a class="btn" href="join.html">Join the lab</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush" style="padding-top:0">
+  <div class="shell">
+    <div class="figure">
+      <div class="figure__bar">
+        <div class="figure__title">
+          <span class="label">Figure &middot; Lab scope</span>
+          <h3>Where the lab works</h3>
+          <p>Activity by ecosystem service and research question</p>
+        </div>
+        <div class="switch" role="group" aria-label="Choose what the figure counts">
+          <button data-mode="projects" aria-pressed="true">Projects</button>
+          <button data-mode="publications" aria-pressed="false">Publications</button>
+        </div>
+      </div>
+      <div id="matrix" style="overflow-x:auto"></div>
+      <div class="legend">
+        <span>Few</span>
+        <span class="legend__ramp">
+          <i style="background:var(--d1)"></i><i style="background:var(--d2)"></i>
+          <i style="background:var(--d3)"></i><i style="background:var(--d4)"></i>
+          <i style="background:var(--d5)"></i>
+        </span>
+        <span>Many</span>
       </div>
     </div>
   </div>
 </section>
 
-
-<section class="section dark" id="contact">
-  <div class="wrap">
-    <span class="eyebrow">Contact</span>
-    <h2 style="max-width:20ch">Get in touch.</h2>
-    <div class="contact-grid">
+<section class="section">
+  <div class="shell">
+    <div class="split">
+      <div class="section__head" style="margin:0">
+        <span class="label">About</span>
+        <h2>Bridging the social and ecological sciences.</h2>
+      </div>
       <div>
-        <h3>Email</h3>
+        <p>The Nyelele Lab is the research group led by Dr. Charity Nyelele in the Department of
+        Environmental Sciences at the University of Virginia. Our work aims to improve understanding
+        of issues at the nature&ndash;people interface: how nature delivers ecosystem services and
+        benefits to people, and how to limit human impacts on the environment.</p>
+        <p>We are interested broadly in the links between biodiversity, climate change, and
+        ecosystem services. The goal of our work is to inform locally tailored strategies and forest
+        management efforts that address climate, environmental, and societal concerns together
+        rather than one at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Featured</span>
+      <h2>Selected work</h2>
+    </div>
+    <div class="grid-3">
+      <a class="card" href="publications.html">
+        <span class="card__kind">Publication</span>
+        <h3>Title of the featured paper</h3>
+        <p>[One or two sentences on what the paper found and why it matters.]</p>
+        <span class="card__meta"><em>Journal Name</em> &middot; 2026</span>
+      </a>
+      <a class="card" href="research.html">
+        <span class="card__kind">Project</span>
+        <h3>Title of the featured project</h3>
+        <p>[One or two sentences on the question, the site, and the collaborators.]</p>
+        <span class="card__meta">Ongoing &middot; 2025&ndash;</span>
+      </a>
+      <a class="card" href="publications.html">
+        <span class="card__kind">Data</span>
+        <h3>Title of the dataset or tool</h3>
+        <p>[One or two sentences on what it contains and who it is for.]</p>
+        <span class="card__meta">Open access</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div>
+        <h4>Contact</h4>
+        <p>Charity Nyelele, PhD<br>
+        Department of Environmental Sciences<br>
+        University of Virginia</p>
         <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
       </div>
       <div>
-        <h3>Address</h3>
-        <p>Department of Environmental Sciences<br>Clark Hall, University of Virginia<br>Charlottesville, VA 22904</p>
+        <h4>University of Virginia</h4>
+        <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
+        <a href="https://www.virginia.edu/">University of Virginia</a></p>
       </div>
       <div>
-        <h3>Elsewhere</h3>
-        <p><a href="#">Google Scholar</a><br><a href="#">Bluesky</a><br><a href="#">GitHub</a></p>
+        <h4>Elsewhere</h4>
+        <p><a href="#">Google Scholar</a><br>
+        <a href="#">GitHub</a><br>
+        <a href="#">Bluesky</a></p>
       </div>
     </div>
+    <div class="colophon__base">
+      <span>&copy; 2026 Nyelele Lab</span>
+      <span>Charlottesville, Virginia</span>
+    </div>
   </div>
-</section>
-
-<div class="wrap">
-  <footer class="site">
-    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
-    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
-  </footer>
-</div>
+</footer>
 
 <script>
-  // Mobile menu
-  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+(function () {
+  /* Theme: follows the operating system, and the button flips it for this visit.
+     No storage is used, so the choice resets on reload. */
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+
+  document.getElementById('themebtn').addEventListener('click', function () {
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  var t = document.getElementById('navtoggle'), n = document.getElementById('mainnav');
   t.addEventListener('click', function () {
-    var open = l.classList.toggle('open');
+    var open = n.classList.toggle('is-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
+</script>
+<script>
+/* ------------------------------------------------------------------
+   MATRIX FIGURE DATA  —  edit these numbers, nothing else.
+   Values are counts. The colour scale is computed automatically.
+   Rows must appear in the same order as ROWS below.
+   ------------------------------------------------------------------ */
+var COLS = ["Stormwater","Air quality","Heat","Carbon","Biodiversity","Health"];
+var ROWS = ["Supply modelling","Demand & access","Trade-offs","Restoration priority","Climate resilience"];
+
+var DATA = {
+  projects: [
+    [3,2,3,2,1,1],
+    [2,3,4,1,1,3],
+    [3,3,3,3,2,1],
+    [1,1,2,4,3,0],
+    [2,2,4,2,2,2]
+  ],
+  publications: [
+    [4,3,2,3,1,1],
+    [1,2,3,1,0,2],
+    [2,4,3,4,2,1],
+    [0,1,1,3,2,0],
+    [1,1,3,1,2,1]
+  ]
+};
+/* ---------------- end of editable data ---------------- */
+
+(function () {
+  var host = document.getElementById('matrix');
+  var mode = 'projects';
+
+  function scale(v, max) {
+    if (!v) return 0;
+    return Math.min(5, Math.max(1, Math.ceil((v / max) * 5)));
+  }
+
+  function render() {
+    var d = DATA[mode];
+    var max = 0;
+    d.forEach(function (r) { r.forEach(function (v) { if (v > max) max = v; }); });
+
+    var h = '<table class="matrix"><thead><tr><th></th>';
+    COLS.forEach(function (c) { h += '<th scope="col">' + c + '</th>'; });
+    h += '</tr></thead><tbody>';
+
+    d.forEach(function (row, i) {
+      h += '<tr><th scope="row">' + ROWS[i] + '</th>';
+      row.forEach(function (v, j) {
+        h += '<td><a class="cell" data-v="' + scale(v, max) + '" href="publications.html" '
+           + 'title="' + ROWS[i] + ' \u00d7 ' + COLS[j] + ' \u00b7 ' + v + '">' + (v || '') + '</a></td>';
+      });
+      h += '</tr>';
+    });
+    host.innerHTML = h + '</tbody></table>';
+  }
+
+  document.querySelectorAll('.switch button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.switch button').forEach(function (x) {
+        x.setAttribute('aria-pressed', 'false');
+      });
+      b.setAttribute('aria-pressed', 'true');
+      mode = b.dataset.mode;
+      render();
+    });
+  });
+
+  render();
+})();
 </script>
 </body>
 </html>

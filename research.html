@@ -4,78 +4,74 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research — Nyelele Lab</title>
-<meta name="description" content="Ecosystem services, trade-offs, climate resilience, and beneficiaries in urban forested systems.">
+<meta name="description" content="Ecosystem services, trade-offs, climate resilience, and beneficiaries in forested systems.">
+<meta name="theme-color" content="#F7F7EC">
+<meta property="og:title" content="Research — Nyelele Lab">
+<meta property="og:description" content="Ecosystem services, trade-offs, climate resilience, and beneficiaries in forested systems.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <div class="nav-links" id="navlinks">
-      <a class="link" href="index.html">Home</a>
-      <a class="link" href="research.html" aria-current="page">Research</a>
-      <a class="link" href="people.html">People</a>
-      <a class="link" href="publications.html">Publications</a>
-      <a class="link" href="news.html">News</a>
-      <a class="link" href="join.html">Join us</a>
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><svg class="wordmark__glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="4.4" fill="currentColor" opacity=".34"/><circle cx="15.5" cy="6.5" r="3" fill="currentColor" opacity=".55"/><circle cx="12.5" cy="15.5" r="5.2" fill="currentColor" opacity=".78"/></svg>Nyelele <em>Lab</em></a>
+    <nav class="mainnav" id="mainnav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html">News</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="iconbtn" id="themebtn" aria-label="Switch between light and dark">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      </button>
+      <button class="iconbtn navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
-  </div>
-</nav>
-
-<header class="page-head">
-  <div class="wrap">
-    <span class="eyebrow">Research</span>
-    <h1>What urban forests give back, and to whom.</h1>
-    <p class="lede">We assess how alternative planning and management options change the supply of and
-    demand for multiple ecosystem services &mdash; and where those services trade off against each
-    other rather than stack up.</p>
   </div>
 </header>
 
-<section class="section first" style="padding-top:60px">
-  <div class="wrap">
-    <div class="services">
-      <div class="service">
-        <div class="tag">SERVICE</div><h3>Stormwater management</h3>
-        <p>Interception and infiltration that reduce runoff volume and flooding risk.</p>
-      </div>
-      <div class="service">
-        <div class="tag">SERVICE</div><h3>Air quality</h3>
-        <p>Pollutant removal by canopy, and the populations downwind of it.</p>
-      </div>
-      <div class="service">
-        <div class="tag">SERVICE</div><h3>Temperature reduction</h3>
-        <p>Shade and evapotranspiration against urban heat exposure.</p>
-      </div>
-      <div class="service">
-        <div class="tag">SERVICE</div><h3>Carbon storage</h3>
-        <p>Standing stocks and annual sequestration across the urban forest.</p>
-      </div>
-    </div>
+<main id="main">
+<section class="hero">
+  <div class="shell">
+    <span class="label">Research</span>
+    <h1>What forests give back, and to whom.</h1>
+    <p class="lede">We assess how alternative planning and management options change the supply of and
+    demand for multiple ecosystem services &mdash; and where those services trade off against each
+    other rather than accumulate.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Research themes</span>
-    <h2 style="margin-bottom:44px">Three questions we keep returning to.</h2>
-    <div class="cols-3">
-      <div class="theme">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Themes</span>
+      <h2>Three questions we keep returning to</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="card__kind">Theme 01</span>
         <h3>Trade-offs and synergies</h3>
         <p>Management that maximizes one service rarely maximizes them all. We quantify where
         objectives reinforce one another and where a genuine choice has to be made.</p>
       </div>
-      <div class="theme">
+      <div class="card">
+        <span class="card__kind">Theme 02</span>
         <h3>Climate resilience and restoration</h3>
         <p>Identifying priority areas for forest restoration, and testing which configurations hold
         up under changing climate conditions.</p>
       </div>
-      <div class="theme">
+      <div class="card">
+        <span class="card__kind">Theme 03</span>
         <h3>Benefits and beneficiaries</h3>
         <p>A socio-ecological lens linking services to the people who actually receive them,
         including health outcomes and the equity of that distribution.</p>
@@ -85,47 +81,103 @@
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Approach</span>
+  <div class="shell">
     <div class="split">
-      <h2>Methods on both sides of the interface.</h2>
-      <ul class="kv">
-        <li><span class="k">Spatial analysis</span><span class="v">Land cover, canopy, and exposure mapping across cities and watersheds.</span></li>
-        <li><span class="k">Ecosystem modelling</span><span class="v">Biophysical models of service supply under alternative management scenarios.</span></li>
-        <li><span class="k">Scenario design</span><span class="v">Planning and management options built with, not just for, the places they affect.</span></li>
-        <li><span class="k">Social methods</span><span class="v">Interviews, focus groups, and surveys that surface demand, priorities, and constraints.</span></li>
-        <li><span class="k">Field measurement</span><span class="v">Ground data to calibrate and check what the models claim.</span></li>
+      <div class="section__head" style="margin:0">
+        <span class="label">Services</span>
+        <h2>What we measure</h2>
+      </div>
+      <ul class="rows">
+        <li><span class="k">Stormwater</span><div class="v">Interception and infiltration that reduce runoff volume and flooding risk.</div></li>
+        <li><span class="k">Air quality</span><div class="v">Pollutant removal by canopy, and the populations living downwind of it.</div></li>
+        <li><span class="k">Temperature</span><div class="v">Shade and evapotranspiration set against urban heat exposure.</div></li>
+        <li><span class="k">Carbon</span><div class="v">Standing stocks and annual sequestration across the urban forest.</div></li>
       </ul>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <span class="eyebrow">Projects</span>
-    <h2 style="margin-bottom:40px">Current work</h2>
-    <ul class="kv">
-      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder. Link to a project page or external site if there is one.]</span></li>
-      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder.]</span></li>
-      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder.]</span></li>
-    </ul>
+  <div class="shell">
+    <div class="split">
+      <div class="section__head" style="margin:0">
+        <span class="label">Approach</span>
+        <h2>Methods on both sides of the interface</h2>
+      </div>
+      <ul class="rows">
+        <li><span class="k">Spatial analysis</span><div class="v">Land cover, canopy, and exposure mapping across cities and watersheds.</div></li>
+        <li><span class="k">Ecosystem modelling</span><div class="v">Biophysical models of service supply under alternative management scenarios.</div></li>
+        <li><span class="k">Scenario design</span><div class="v">Planning options built with, not merely for, the places they affect.</div></li>
+        <li><span class="k">Social methods</span><div class="v">Interviews, focus groups, and surveys that surface demand, priorities, and constraints.</div></li>
+        <li><span class="k">Field measurement</span><div class="v">Ground data to calibrate and check what the models claim.</div></li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<div class="wrap">
-  <footer class="site">
-    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
-    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
-  </footer>
-</div>
+<section class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Projects</span>
+      <h2>Current work</h2>
+    </div>
+    <ul class="rows">
+      <li><span class="k">Project name</span><div class="v"><p>[Two sentences on the question, the study site, and the funder. Link out if the project has its own page.]</p></div></li>
+      <li><span class="k">Project name</span><div class="v"><p>[Two sentences on the question, the study site, and the funder.]</p></div></li>
+      <li><span class="k">Project name</span><div class="v"><p>[Two sentences on the question, the study site, and the funder.]</p></div></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div>
+        <h4>Contact</h4>
+        <p>Charity Nyelele, PhD<br>
+        Department of Environmental Sciences<br>
+        University of Virginia</p>
+        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+      </div>
+      <div>
+        <h4>University of Virginia</h4>
+        <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
+        <a href="https://www.virginia.edu/">University of Virginia</a></p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <p><a href="#">Google Scholar</a><br>
+        <a href="#">GitHub</a><br>
+        <a href="#">Bluesky</a></p>
+      </div>
+    </div>
+    <div class="colophon__base">
+      <span>&copy; 2026 Nyelele Lab</span>
+      <span>Charlottesville, Virginia</span>
+    </div>
+  </div>
+</footer>
 
 <script>
-  // Mobile menu
-  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+(function () {
+  /* Theme: follows the operating system, and the button flips it for this visit.
+     No storage is used, so the choice resets on reload. */
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+
+  document.getElementById('themebtn').addEventListener('click', function () {
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  var t = document.getElementById('navtoggle'), n = document.getElementById('mainnav');
   t.addEventListener('click', function () {
-    var open = l.classList.toggle('open');
+    var open = n.classList.toggle('is-open');
     t.setAttribute('aria-expanded', open);
   });
+})();
 </script>
+
 </body>
 </html>
