@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join us — Nyelele Lab</title>
+<meta name="description" content="Opportunities for prospective students, undergraduates, and postdocs in the Nyelele Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="nav-links" id="navlinks">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="research.html">Research</a>
+      <a class="link" href="people.html">People</a>
+      <a class="link" href="publications.html">Publications</a>
+      <a class="link" href="news.html">News</a>
+      <a class="link" href="join.html" aria-current="page">Join us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Join us</span>
+    <h1>We are looking for people curious about both halves of the problem.</h1>
+    <p class="lede">You do not need to arrive fluent in ecology and social science both. You do need
+    to be willing to become uncomfortable in one of them.</p>
+  </div>
+</header>
+
+<section class="section first" style="padding-top:56px">
+  <div class="wrap">
+    <div class="split">
+      <h2>Who we are recruiting.</h2>
+      <ul class="kv">
+        <li><span class="k">PhD students</span><span class="v">[State the application deadline, the program to apply through, and whether funding is available this cycle.]</span></li>
+        <li><span class="k">MS students</span><span class="v">[Same &mdash; deadline, program, funding.]</span></li>
+        <li><span class="k">Undergraduates</span><span class="v">[Say whether you take students for credit, for pay, or both, and when to ask.]</span></li>
+        <li><span class="k">Postdocs</span><span class="v">[List open positions, or say to email with a fellowship idea.]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">How to reach out</span>
+    <div class="split">
+      <h2>What to send.</h2>
+      <div class="narrow">
+        <p>Email Dr. Nyelele with a short paragraph on the question you want to work on and why this
+        lab is the place to do it, plus a CV. Naming a paper of ours that connects to your interests
+        helps more than a long statement of purpose.</p>
+        <p>We read everything, and we try to reply to everyone. If a few weeks pass without a
+        response, a follow-up is welcome rather than annoying.</p>
+        <div class="cta-row"><a class="btn solid" href="mailto:EMAIL@virginia.edu">Email the lab</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2 style="max-width:20ch">Find us.</h2>
+    <div class="contact-grid">
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>Department of Environmental Sciences<br>Clark Hall, University of Virginia<br>Charlottesville, VA 22904</p>
+      </div>
+      <div>
+        <h3>Elsewhere</h3>
+        <p><a href="#">Google Scholar</a><br><a href="#">Bluesky</a><br><a href="#">GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="site">
+    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
+    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
+  </footer>
+</div>
+
+<script>
+  // Mobile menu
+  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+  t.addEventListener('click', function () {
+    var open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Nyelele Lab</title>
+<meta name="description" content="Ecosystem services, trade-offs, climate resilience, and beneficiaries in urban forested systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="nav-links" id="navlinks">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="research.html" aria-current="page">Research</a>
+      <a class="link" href="people.html">People</a>
+      <a class="link" href="publications.html">Publications</a>
+      <a class="link" href="news.html">News</a>
+      <a class="link" href="join.html">Join us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Research</span>
+    <h1>What urban forests give back, and to whom.</h1>
+    <p class="lede">We assess how alternative planning and management options change the supply of and
+    demand for multiple ecosystem services &mdash; and where those services trade off against each
+    other rather than stack up.</p>
+  </div>
+</header>
+
+<section class="section first" style="padding-top:60px">
+  <div class="wrap">
+    <div class="services">
+      <div class="service">
+        <div class="tag">SERVICE</div><h3>Stormwater management</h3>
+        <p>Interception and infiltration that reduce runoff volume and flooding risk.</p>
+      </div>
+      <div class="service">
+        <div class="tag">SERVICE</div><h3>Air quality</h3>
+        <p>Pollutant removal by canopy, and the populations downwind of it.</p>
+      </div>
+      <div class="service">
+        <div class="tag">SERVICE</div><h3>Temperature reduction</h3>
+        <p>Shade and evapotranspiration against urban heat exposure.</p>
+      </div>
+      <div class="service">
+        <div class="tag">SERVICE</div><h3>Carbon storage</h3>
+        <p>Standing stocks and annual sequestration across the urban forest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Research themes</span>
+    <h2 style="margin-bottom:44px">Three questions we keep returning to.</h2>
+    <div class="cols-3">
+      <div class="theme">
+        <h3>Trade-offs and synergies</h3>
+        <p>Management that maximizes one service rarely maximizes them all. We quantify where
+        objectives reinforce one another and where a genuine choice has to be made.</p>
+      </div>
+      <div class="theme">
+        <h3>Climate resilience and restoration</h3>
+        <p>Identifying priority areas for forest restoration, and testing which configurations hold
+        up under changing climate conditions.</p>
+      </div>
+      <div class="theme">
+        <h3>Benefits and beneficiaries</h3>
+        <p>A socio-ecological lens linking services to the people who actually receive them,
+        including health outcomes and the equity of that distribution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Approach</span>
+    <div class="split">
+      <h2>Methods on both sides of the interface.</h2>
+      <ul class="kv">
+        <li><span class="k">Spatial analysis</span><span class="v">Land cover, canopy, and exposure mapping across cities and watersheds.</span></li>
+        <li><span class="k">Ecosystem modelling</span><span class="v">Biophysical models of service supply under alternative management scenarios.</span></li>
+        <li><span class="k">Scenario design</span><span class="v">Planning and management options built with, not just for, the places they affect.</span></li>
+        <li><span class="k">Social methods</span><span class="v">Interviews, focus groups, and surveys that surface demand, priorities, and constraints.</span></li>
+        <li><span class="k">Field measurement</span><span class="v">Ground data to calibrate and check what the models claim.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Projects</span>
+    <h2 style="margin-bottom:40px">Current work</h2>
+    <ul class="kv">
+      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder. Link to a project page or external site if there is one.]</span></li>
+      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder.]</span></li>
+      <li><span class="k">Project name</span><span class="v">[One or two sentences on the question, the site, and the funder.]</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="site">
+    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
+    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
+  </footer>
+</div>
+
+<script>
+  // Mobile menu
+  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+  t.addEventListener('click', function () {
+    var open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

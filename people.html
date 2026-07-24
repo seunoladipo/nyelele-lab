@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People — Nyelele Lab</title>
+<meta name="description" content="Members of the Nyelele Lab at the University of Virginia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="nav-links" id="navlinks">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="research.html">Research</a>
+      <a class="link" href="people.html" aria-current="page">People</a>
+      <a class="link" href="publications.html">Publications</a>
+      <a class="link" href="news.html">News</a>
+      <a class="link" href="join.html">Join us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">People</span>
+    <h1>The lab.</h1>
+    <p class="lede">We are ecologists, social scientists, and spatial analysts who mostly refuse to
+    pick one of the three.</p>
+  </div>
+</header>
+
+<section class="section first" style="padding-top:56px">
+  <div class="wrap">
+    <span class="eyebrow">Principal investigator</span>
+    <div class="people">
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Charity Nyelele, PhD</h3>
+        <div class="role">Principal Investigator</div>
+        <p>[Two sentences: background, what she works on, what she is looking for in students.]</p>
+        <div class="links"><a href="#">Google Scholar</a> &middot; <a href="#">CV</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Graduate students</span>
+    <div class="people">
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Name</h3>
+        <div class="role">PhD Student</div>
+        <p>[One line on their research focus within the lab.]</p>
+      </div>
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Name</h3>
+        <div class="role">PhD Student</div>
+        <p>[One line on their research focus within the lab.]</p>
+      </div>
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Name</h3>
+        <div class="role">MS Student</div>
+        <p>[One line on their research focus within the lab.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Undergraduate researchers</span>
+    <div class="people">
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Name</h3>
+        <div class="role">Undergraduate Researcher</div>
+        <p>[One line on what they are working on.]</p>
+      </div>
+      <div class="person">
+        <div class="photo">ADD PHOTO</div>
+        <h3>Name</h3>
+        <div class="role">Undergraduate Researcher</div>
+        <p>[One line on what they are working on.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Alumni</span>
+    <h2 style="margin-bottom:30px">Where people went next</h2>
+    <ul class="kv">
+      <li><span class="k">2025</span><span class="v"><strong>Name</strong> &mdash; MS. Now at [organization].</span></li>
+      <li><span class="k">2024</span><span class="v"><strong>Name</strong> &mdash; Undergraduate researcher. Now at [organization].</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="site">
+    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
+    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
+  </footer>
+</div>
+
+<script>
+  // Mobile menu
+  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+  t.addEventListener('click', function () {
+    var open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

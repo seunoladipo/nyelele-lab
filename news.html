@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News — Nyelele Lab</title>
+<meta name="description" content="Recent updates from the Nyelele Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="nav-links" id="navlinks">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="research.html">Research</a>
+      <a class="link" href="people.html">People</a>
+      <a class="link" href="publications.html">Publications</a>
+      <a class="link" href="news.html" aria-current="page">News</a>
+      <a class="link" href="join.html">Join us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">News</span>
+    <h1>Lab updates.</h1>
+    <p class="lede">Papers, grants, field seasons, and new people. Newest first.</p>
+  </div>
+</header>
+
+<section class="section first" style="padding-top:50px">
+  <div class="wrap">
+    <ul class="kv">
+      <li><span class="k">July 2026</span><span class="v"><strong>Headline for the update.</strong> [Two or three sentences. Link out to the paper, the press release, or the project.]</span></li>
+      <li><span class="k">May 2026</span><span class="v"><strong>Headline for the update.</strong> [Two or three sentences.]</span></li>
+      <li><span class="k">March 2026</span><span class="v"><strong>Headline for the update.</strong> [Two or three sentences.]</span></li>
+      <li><span class="k">January 2026</span><span class="v"><strong>Headline for the update.</strong> [Two or three sentences.]</span></li>
+      <li><span class="k">October 2025</span><span class="v"><strong>Headline for the update.</strong> [Two or three sentences.]</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="site">
+    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
+    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
+  </footer>
+</div>
+
+<script>
+  // Mobile menu
+  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+  t.addEventListener('click', function () {
+    var open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

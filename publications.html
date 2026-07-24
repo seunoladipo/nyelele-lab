@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Nyelele Lab</title>
+<meta name="description" content="Papers, datasets, and code from the Nyelele Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,600;9..144,1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">Nyelele <span>Lab</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <div class="nav-links" id="navlinks">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="research.html">Research</a>
+      <a class="link" href="people.html">People</a>
+      <a class="link" href="publications.html" aria-current="page">Publications</a>
+      <a class="link" href="news.html">News</a>
+      <a class="link" href="join.html">Join us</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Publications</span>
+    <h1>Published work.</h1>
+    <p class="lede">Lab members in bold. Email us if you cannot reach a paper &mdash; we will send a copy.</p>
+  </div>
+</header>
+
+<section class="section first" style="padding-top:50px">
+  <div class="wrap">
+    <p class="muted narrow">Replace the entries below with your own. Link each title to its DOI so
+    the citation resolves even if a journal reorganizes its site.</p>
+    <ul class="pubs">
+      <li><span class="yr">2026</span><span>
+        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
+        <span class="j">Author, A., <strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 12(3), 45&ndash;67.</span>
+      </span></li>
+      <li><span class="yr">2025</span><span>
+        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
+        <span class="j"><strong>Nyelele, C.</strong>, Author, B. &mdash; <em>Journal Name</em>, 11(2), 88&ndash;104.</span>
+      </span></li>
+      <li><span class="yr">2025</span><span>
+        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
+        <span class="j">Author, C., <strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 40(1), 1&ndash;19.</span>
+      </span></li>
+      <li><span class="yr">2024</span><span>
+        <span class="t"><a href="#">Paper title goes here</a>.</span><br>
+        <span class="j"><strong>Nyelele, C.</strong> &mdash; <em>Journal Name</em>, 8(4), 220&ndash;238.</span>
+      </span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Other outputs</span>
+    <h2 style="margin-bottom:30px">Reports, data, and code</h2>
+    <ul class="kv">
+      <li><span class="k">Dataset</span><span class="v">[Name and one line. Link to the repository or archive.]</span></li>
+      <li><span class="k">Code</span><span class="v">[Name and one line. Link to GitHub.]</span></li>
+      <li><span class="k">Report</span><span class="v">[Name and one line. Link to the PDF.]</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer class="site">
+    <span>&copy; 2026 Nyelele Lab &middot; University of Virginia</span>
+    <span><a href="https://www.evsc.virginia.edu/">Department of Environmental Sciences</a></span>
+  </footer>
+</div>
+
+<script>
+  // Mobile menu
+  var t = document.querySelector('.nav-toggle'), l = document.getElementById('navlinks');
+  t.addEventListener('click', function () {
+    var open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
