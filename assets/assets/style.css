@@ -450,3 +450,22 @@ a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
   .pub{grid-template-columns:1fr}
   .pub__figure{order:-1}
 }
+
+
+
+/* ---------- publication figure + badge sizing ---------- */
+
+/* narrower image column */
+.pub{grid-template-columns:minmax(0,1fr) minmax(0,300px)}
+
+/* uniform landscape thumbnail, whatever the source image size */
+.pub__figure img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+}
+
+/* smaller metric badges */
+.pub__badges{gap:10px;min-height:0}
+.pub__badges .altmetric-embed,
+.pub__badges .__dimensions_badge_embed__{zoom:.72}
