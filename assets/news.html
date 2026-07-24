@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News — Nyelele Lab</title>
+<meta name="description" content="Recent updates from the Nyelele Lab.">
+<meta name="theme-color" content="#F7F7EC">
+<meta property="og:title" content="News — Nyelele Lab">
+<meta property="og:description" content="Recent updates from the Nyelele Lab.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="wordmark" href="index.html"><svg class="wordmark__glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="4.4" fill="currentColor" opacity=".34"/><circle cx="15.5" cy="6.5" r="3" fill="currentColor" opacity=".55"/><circle cx="12.5" cy="15.5" r="5.2" fill="currentColor" opacity=".78"/></svg>Nyelele <em>Lab</em></a>
+    <nav class="mainnav" id="mainnav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="news.html" aria-current="page">News</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="iconbtn" id="themebtn" aria-label="Switch between light and dark">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      </button>
+      <button class="iconbtn navtoggle" id="navtoggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="shell">
+    <span class="label">News</span>
+    <h1>Lab updates.</h1>
+    <p class="lede">Papers, grants, field seasons, and new people. Newest first.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <ul class="rows">
+      <li><span class="k">Jul 2026</span><div class="v"><strong>Headline for the update.</strong><p>[Two or three sentences. Link out to the paper, the release, or the project.]</p></div></li>
+      <li><span class="k">May 2026</span><div class="v"><strong>Headline for the update.</strong><p>[Two or three sentences.]</p></div></li>
+      <li><span class="k">Mar 2026</span><div class="v"><strong>Headline for the update.</strong><p>[Two or three sentences.]</p></div></li>
+      <li><span class="k">Jan 2026</span><div class="v"><strong>Headline for the update.</strong><p>[Two or three sentences.]</p></div></li>
+      <li><span class="k">Oct 2025</span><div class="v"><strong>Headline for the update.</strong><p>[Two or three sentences.]</p></div></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div>
+        <h4>Contact</h4>
+        <p>Charity Nyelele, PhD<br>
+        Department of Environmental Sciences<br>
+        University of Virginia</p>
+        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+      </div>
+      <div>
+        <h4>University of Virginia</h4>
+        <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
+        <a href="https://www.virginia.edu/">University of Virginia</a></p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <p><a href="#">Google Scholar</a><br>
+        <a href="#">GitHub</a><br>
+        <a href="#">Bluesky</a></p>
+      </div>
+    </div>
+    <div class="colophon__base">
+      <span>&copy; 2026 Nyelele Lab</span>
+      <span>Charlottesville, Virginia</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* Theme: follows the operating system, and the button flips it for this visit.
+     No storage is used, so the choice resets on reload. */
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+
+  document.getElementById('themebtn').addEventListener('click', function () {
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  var t = document.getElementById('navtoggle'), n = document.getElementById('mainnav');
+  t.addEventListener('click', function () {
+    var open = n.classList.toggle('is-open');
+    t.setAttribute('aria-expanded', open);
+  });
+})();
+</script>
+
+</body>
+</html>
