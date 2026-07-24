@@ -13,6 +13,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.pub__badges{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:center;
+  gap:12px;
+}
+.pub__badges > *{
+  flex:0 0 auto;
+  width:auto !important;
+  max-width:none;
+  display:inline-block !important;
+}
+.pub__badges .altmetric-embed,
+.pub__badges .__dimensions_badge_embed__{
+  zoom:.6;
+}
+</style>
+</head>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -107,7 +127,7 @@
 
         <figure class="pub__figure">
           <img src="assets/assets/chungg.jpg" alt="Mountain headwaters"
-               style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:2px">
+               style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px">
           <figcaption>Image by [photographer] from Pixabay</figcaption>
         </figure>
         
