@@ -43,7 +43,7 @@
 <main id="main">
 <section class="hero">
   <div class="shell">
-    <span class="label">University okf Virginia &middot; Department of Environmental Sciences</span>
+    <span class="label">University of Virginia &middot; Department of Environmental Sciences</span>
     <h1><span class="br">Shared landscapes.</span> Uneven benefits.</h1>
     <p class="lede">The Nyelele Lab works at the nature&ndash;people interface, studying how forested
     systems deliver ecosystem services and how planning decisions determine who actually receives
@@ -51,34 +51,6 @@
     <div class="btn-row">
       <a class="btn btn--primary" href="research.html">Research</a>
       <a class="btn" href="join.html">Join the lab</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section--flush" style="padding-top:0">
-  <div class="shell">
-    <div class="figure">
-      <div class="figure__bar">
-        <div class="figure__title">
-          <span class="label">Figure &middot; Lab scope</span>
-          <h3>Where the lab works</h3>
-          <p>Activity by ecosystem service and research question</p>
-        </div>
-        <div class="switch" role="group" aria-label="Choose what the figure counts">
-          <button data-mode="projects" aria-pressed="true">Projects</button>
-          <button data-mode="publications" aria-pressed="false">Publications</button>
-        </div>
-      </div>
-      <div id="matrix" style="overflow-x:auto"></div>
-      <div class="legend">
-        <span>Few</span>
-        <span class="legend__ramp">
-          <i style="background:var(--d1)"></i><i style="background:var(--d2)"></i>
-          <i style="background:var(--d3)"></i><i style="background:var(--d4)"></i>
-          <i style="background:var(--d5)"></i>
-        </span>
-        <span>Many</span>
-      </div>
     </div>
   </div>
 </section>
@@ -164,76 +136,6 @@
     var open = n.classList.toggle('is-open');
     t.setAttribute('aria-expanded', open);
   });
-})();
-</script>
-<script>
-/* ------------------------------------------------------------------
-   MATRIX FIGURE DATA  —  edit these numbers, nothing else.
-   Values are counts. The colour scale is computed automatically.
-   Rows must appear in the same order as ROWS below.
-   ------------------------------------------------------------------ */
-var COLS = ["Stormwater","Air quality","Heat","Carbon","Biodiversity","Health"];
-var ROWS = ["Supply modelling","Demand & access","Trade-offs","Restoration priority","Climate resilience"];
-
-var DATA = {
-  projects: [
-    [3,2,3,2,1,1],
-    [2,3,4,1,1,3],
-    [3,3,3,3,2,1],
-    [1,1,2,4,3,0],
-    [2,2,4,2,2,2]
-  ],
-  publications: [
-    [4,3,2,3,1,1],
-    [1,2,3,1,0,2],
-    [2,4,3,4,2,1],
-    [0,1,1,3,2,0],
-    [1,1,3,1,2,1]
-  ]
-};
-/* ---------------- end of editable data ---------------- */
-
-(function () {
-  var host = document.getElementById('matrix');
-  var mode = 'projects';
-
-  function scale(v, max) {
-    if (!v) return 0;
-    return Math.min(5, Math.max(1, Math.ceil((v / max) * 5)));
-  }
-
-  function render() {
-    var d = DATA[mode];
-    var max = 0;
-    d.forEach(function (r) { r.forEach(function (v) { if (v > max) max = v; }); });
-
-    var h = '<table class="matrix"><thead><tr><th></th>';
-    COLS.forEach(function (c) { h += '<th scope="col">' + c + '</th>'; });
-    h += '</tr></thead><tbody>';
-
-    d.forEach(function (row, i) {
-      h += '<tr><th scope="row">' + ROWS[i] + '</th>';
-      row.forEach(function (v, j) {
-        h += '<td><a class="cell" data-v="' + scale(v, max) + '" href="publications.html" '
-           + 'title="' + ROWS[i] + ' \u00d7 ' + COLS[j] + ' \u00b7 ' + v + '">' + (v || '') + '</a></td>';
-      });
-      h += '</tr>';
-    });
-    host.innerHTML = h + '</tbody></table>';
-  }
-
-  document.querySelectorAll('.switch button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      document.querySelectorAll('.switch button').forEach(function (x) {
-        x.setAttribute('aria-pressed', 'false');
-      });
-      b.setAttribute('aria-pressed', 'true');
-      mode = b.dataset.mode;
-      render();
-    });
-  });
-
-  render();
 })();
 </script>
 </body>
