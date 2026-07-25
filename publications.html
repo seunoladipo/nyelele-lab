@@ -13,7 +13,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+
+  
 <style>
+@media (max-width:820px){
+  .pub{
+    grid-template-columns:1fr !important;
+    gap:20px !important;
+  }
+  .pub__figure{order:-1;max-width:100%}
+  .pub__title{font-size:1.5rem;line-height:1.25}
+  .pub__authors{font-size:.9rem}
+  .pub__summary{font-size:.95rem}
+  .pub__badges{flex-wrap:wrap}
+}
+/* hide the standalone year markers */
+...rest of your existing rules...
+</style>  
   /* hide the standalone year markers */
 .yearmark{display:none}
 
