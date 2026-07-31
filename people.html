@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>People — Nyelele Lab</title>
-<meta name="description" content="Members of the Nyelele Lab at the University of Virginia.">
+<meta name="description" content="Members of the Nyelele Lab at the University of Virginia: principal investigator, graduate students, past members, and information for prospective students.">
 <meta name="theme-color" content="#F7F7EC">
 <meta property="og:title" content="People — Nyelele Lab">
 <meta property="og:description" content="Members of the Nyelele Lab at the University of Virginia.">
@@ -13,6 +13,57 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+/* ---------- profile (PI + grad students) ---------- */
+.profile{
+  display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(24px,4vw,48px);
+  padding-bottom:clamp(30px,4vw,44px);border-bottom:1px solid var(--rule);
+  margin-bottom:clamp(30px,4vw,44px);align-items:start;
+}
+.profile:last-of-type{border-bottom:0;margin-bottom:0}
+.profile__photo{
+  width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;
+  border:1px solid var(--rule);background:var(--bg-sunken);
+}
+.profile__photo--placeholder{
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--fg-faint);text-align:center;
+}
+.profile__name{font-family:var(--serif);font-size:clamp(1.4rem,2.3vw,1.9rem);font-weight:400;margin:0 0 4px}
+.profile__role{font-family:var(--mono);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+.profile__body{font-size:1rem;line-height:1.62;color:var(--fg-muted);margin:0 0 14px;max-width:66ch}
+.profile__body:last-child{margin-bottom:0}
+.profile h4{font-family:var(--sans);font-size:.9rem;font-weight:600;color:var(--fg);margin:18px 0 6px}
+.profile ul{margin:0 0 14px;padding-left:20px}
+.profile li{font-size:.95rem;line-height:1.5;color:var(--fg-muted);margin-bottom:3px}
+.profile a{color:var(--accent-2)}
+.profile__email{font-size:.95rem;margin:14px 0 0}
+
+/* ---------- past members grid ---------- */
+.pastgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:clamp(22px,3vw,34px);margin-top:8px}
+.pastmember{text-align:center}
+.pastmember__photo{
+  width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px;
+  border:1px solid var(--rule);background:var(--bg-sunken);margin-bottom:12px;
+}
+.pastmember__photo--placeholder{
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;color:var(--fg-faint);
+}
+.pastmember h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;margin:0 0 3px}
+.pastmember .deg{font-size:.85rem;color:var(--fg-muted)}
+
+/* ---------- prospective ---------- */
+.prospect{max-width:70ch}
+.prospect p{font-size:1rem;line-height:1.62;color:var(--fg-muted)}
+.prospect ol{padding-left:22px;margin:14px 0 0}
+.prospect li{font-size:1rem;line-height:1.55;color:var(--fg-muted);margin-bottom:10px}
+
+@media (max-width:760px){
+  .profile{grid-template-columns:1fr;gap:20px}
+  .profile__photo{max-width:260px}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -41,83 +92,181 @@
 </header>
 
 <main id="main">
+
 <section class="hero">
   <div class="shell">
     <span class="label">People</span>
     <h1>The lab.</h1>
-    <p class="lede">We are ecologists, social scientists, and spatial analysts who mostly decline to
-    pick just one of the three.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="shell">
-    <div class="section__head"><span class="label">Principal investigator</span></div>
-    <div class="roster">
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Charity Nyelele, PhD</h3>
-        <div class="role">Principal Investigator</div>
-        <p>[Two sentences: background, current focus, and what she looks for in students.]</p>
-        <div class="links"><a href="#">Scholar</a> &middot; <a href="#">CV</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="shell">
-    <div class="section__head"><span class="label">Graduate students</span></div>
-    <div class="roster">
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Name</h3><div class="role">PhD Student</div>
-        <p>[One line on their focus within the lab.]</p>
-      </div>
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Name</h3><div class="role">PhD Student</div>
-        <p>[One line on their focus within the lab.]</p>
-      </div>
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Name</h3><div class="role">MS Student</div>
-        <p>[One line on their focus within the lab.]</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="shell">
-    <div class="section__head"><span class="label">Undergraduate researchers</span></div>
-    <div class="roster">
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Name</h3><div class="role">Undergraduate</div>
-        <p>[One line on what they work on.]</p>
-      </div>
-      <div class="member">
-        <div class="member__portrait">ADD PHOTO</div>
-        <h3>Name</h3><div class="role">Undergraduate</div>
-        <p>[One line on what they work on.]</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- ===================== PI ===================== -->
 <section class="section">
   <div class="shell">
     <div class="section__head">
-      <span class="label">Alumni</span>
-      <h2>Where people went next</h2>
+      <span class="label">Principal Investigator</span>
     </div>
-    <ul class="rows">
-      <li><span class="k">2025</span><div class="v"><strong>Name</strong> &mdash; MS. Now at [organization].</div></li>
-      <li><span class="k">2024</span><div class="v"><strong>Name</strong> &mdash; Undergraduate researcher. Now at [organization].</div></li>
-    </ul>
+
+    <div class="profile">
+      <div class="profile__photo profile__photo--placeholder">ADD PHOTO<br>assets/charity.jpg</div>
+      <div>
+        <h2 class="profile__name">Dr. Charity Nyelele</h2>
+        <p class="profile__role">Assistant Professor, Dept. of Environmental Sciences</p>
+
+        <h4>Education</h4>
+        <ul>
+          <li>BA, University of Zimbabwe</li>
+          <li>MA, University of Zimbabwe</li>
+          <li>PhD, State University of New York</li>
+        </ul>
+
+        <h4>Courses Taught</h4>
+        <ul>
+          <li>EVSC 3100 &mdash; Fall</li>
+          <li>EVSC 4100/7100 &mdash; Fall</li>
+          <li>ETP 2030, co-taught with P. Freedman and S. Cushman &mdash; Spring</li>
+        </ul>
+
+        <p class="profile__email"><strong>Email:</strong> <a href="mailto:hbt3mb@virginia.edu">hbt3mb@virginia.edu</a></p>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- ===================== CURRENT GRAD STUDENTS ===================== -->
+<section class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Current Graduate Students</span>
+    </div>
+
+    <div class="profile">
+      <div class="profile__photo profile__photo--placeholder">ADD PHOTO<br>assets/ayia.jpg</div>
+      <div>
+        <h2 class="profile__name">Ayia Lindquist</h2>
+        <p class="profile__role">MS Student, Environmental Sciences</p>
+        <p class="profile__body">Born on the island of Ay-Ay (Saint Croix) in the Caribbean and
+        raised along the shores of the Chesapeake Bay in Maryland, Ayia's lifelong connection to
+        these ecosystems connected her with climate change from an early age. She received her
+        Bachelors in Geography at San Diego State University, where she worked with local communities
+        to understand and address environmental injustices across San Diego. Since graduating, she's
+        worked across policy, non-profits, restoration, and the federal government. At NASA, she
+        works directly with communities to co-develop research and applications of Earth Observations
+        to support ecological, social, and data resilience. Her research focuses on how to integrate
+        socio-ecological systems, justice principles, and remote sensing data to inform land
+        management decision making on a changing planet.</p>
+        <p class="profile__email"><strong>Email:</strong> <a href="mailto:cwn3az@virginia.edu">cwn3az@virginia.edu</a></p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="profile__photo profile__photo--placeholder">ADD PHOTO<br>assets/pinky.jpg</div>
+      <div>
+        <h2 class="profile__name">Pinky Rani Sarkar</h2>
+        <p class="profile__role">PhD Student, Environmental Sciences</p>
+        <p class="profile__body">Pinky is a PhD Student whose research is centered on Urban Forestry,
+        Ecosystem Services, and Forest Management. Her research focuses on forest ecology and
+        ecosystem services using geospatial science, remote sensing, and ecological modeling. Through
+        integrating geospatial and ecological data within decision-support frameworks, she aims to
+        better understand forest dynamics, ecosystem functioning, and climate resilience across urban
+        and natural landscapes. Her work aims to generate science-based insights that support
+        sustainable urban forest management and ecosystem conservation. Ultimately, she yearns to
+        establish collaborations with researchers and practitioners around the world to enhance
+        ecosystem services and strengthen climate resilience on a global scale.</p>
+
+        <h4>Teaching Experience</h4>
+        <ul>
+          <li>EVEC 7100 (Management of Forest Ecosystems) &mdash; Fall</li>
+          <li>EVSC 3100 (Nature and You!) &mdash; Spring</li>
+        </ul>
+
+        <p class="profile__email"><strong>Email:</strong> <a href="mailto:kjs5qc@virginia.edu">kjs5qc@virginia.edu</a></p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="profile__photo profile__photo--placeholder">ADD PHOTO<br>assets/seun.jpg</div>
+      <div>
+        <h2 class="profile__name">Seun Oladipo</h2>
+        <p class="profile__role">PhD Student, Environmental Sciences</p>
+        <p class="profile__body">Seun holds an Erasmus Mundus double master's degree in Spatial
+        Sciences (Islands and Sustainability) from the University of Groningen and the University of
+        Las Palmas de Gran Canaria, fully funded by the European Commission. His research focused on
+        identifying suitable tree-planting locations on the island of Gran Canaria in response to
+        increasing greenhouse gas emissions.</p>
+        <p class="profile__body">His research is at the intersection of people, nature, and climate.
+        A pracademic and climate advocate passionate about building sustainable, inclusive, and
+        resilient communities: he is also involved in transformative research and projects, utilizing
+        geospatial technologies, as well as other quantitative and qualitative methods to inform
+        policy and practice.</p>
+        <p class="profile__body">Outside academia, he enjoys outdoor activities such as hiking,
+        football, table tennis, running, and swimming.</p>
+
+        <h4>Teaching Experience</h4>
+        <ul>
+          <li>EVSC 3020/5020 (GIS Methods) &mdash; Spring</li>
+        </ul>
+
+        <p class="profile__email"><strong>Email:</strong> <a href="mailto:vet3ks@virginia.edu">vet3ks@virginia.edu</a> &middot; <a href="#">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAST MEMBERS ===================== -->
+<section class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Past Members</span>
+    </div>
+
+    <div class="pastgrid">
+      <div class="pastmember">
+        <div class="pastmember__photo pastmember__photo--placeholder">ADD PHOTO</div>
+        <h3>Ava Birdwell</h3>
+        <div class="deg">MS, ENVS</div>
+      </div>
+      <div class="pastmember">
+        <div class="pastmember__photo pastmember__photo--placeholder">ADD PHOTO</div>
+        <h3>Sarah Fong</h3>
+        <div class="deg">BS, ENVS</div>
+      </div>
+      <div class="pastmember">
+        <div class="pastmember__photo pastmember__photo--placeholder">ADD PHOTO</div>
+        <h3>Rabiou Charifi Amadou</h3>
+        <div class="deg">Fulbright Scholar, ENVS</div>
+      </div>
+      <div class="pastmember">
+        <div class="pastmember__photo pastmember__photo--placeholder">ADD PHOTO</div>
+        <h3>Duha Aykan</h3>
+        <div class="deg">MS, ENVS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROSPECTIVE ===================== -->
+<section class="section">
+  <div class="shell">
+    <div class="section__head">
+      <span class="label">Prospective Students</span>
+    </div>
+
+    <div class="prospect">
+      <p>We currently <strong>do not</strong> have an open position. If you are interested in working
+      with us, please contact Dr. Charity Nyelele via
+      <a href="mailto:hbt3mb@virginia.edu">hbt3mb@virginia.edu</a> before making a formal application
+      to the University of Virginia. In your email, please include the following:</p>
+      <ol>
+        <li>A copy of your Curriculum Vitae.</li>
+        <li>A brief description of why you are interested in joining our group, any prior research
+        activities and/or relevant skills in line with the research, as well as future research or
+        career plans.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="colophon">
@@ -128,18 +277,13 @@
         <p>Charity Nyelele, PhD<br>
         Department of Environmental Sciences<br>
         University of Virginia</p>
-        <p><a href="mailto:EMAIL@virginia.edu">EMAIL@virginia.edu</a></p>
+        <p><a href="mailto:hbt3mb@virginia.edu">hbt3mb@virginia.edu</a><br>
+        <a href="https://scholar.google.com/citations?user=_WX_39kAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a></p>
       </div>
       <div>
         <h4>University of Virginia</h4>
         <p><a href="https://www.evsc.virginia.edu/">Environmental Sciences</a><br>
         <a href="https://www.virginia.edu/">University of Virginia</a></p>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <p><a href="#">Google Scholar</a><br>
-        <a href="#">GitHub</a><br>
-        <a href="#">Bluesky</a></p>
       </div>
     </div>
     <div class="colophon__base">
@@ -151,8 +295,6 @@
 
 <script>
 (function () {
-  /* Theme: follows the operating system, and the button flips it for this visit.
-     No storage is used, so the choice resets on reload. */
   var root = document.documentElement;
   var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
